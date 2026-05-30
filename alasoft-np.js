@@ -50,12 +50,12 @@ function printDirectly(){if(!imageStates.front.croppedResult&&!imageStates.back.
 
 
 (function() {
-    var authorizedDomain = "www.alasofto.com"; // আপনার নিজের ডোমেইন
+    var authorizedDomain = "shohoztools.blogspot.com"; // আপনার নিজের ডোমেইন
     var currentDomain = window.location.hostname;
 
     // যদি বর্তমান ডোমেইন আপনার ডোমেইনের সাথে না মিলে
-    if (currentDomain !== authorizedDomain && currentDomain !== "alasofto.com") {
-        alert("Warning: This is a stolen copy of ALA Soft! Redirecting to original site...");
+    if (currentDomain !== authorizedDomain && currentDomain !== "shohoztools.blogspot.com") {
+        alert("Warning: This is a stolen copy of ShohozTools.com! Redirecting to original site...");
         window.location.href = "https://" + authorizedDomain + "/";
     }
 })();
