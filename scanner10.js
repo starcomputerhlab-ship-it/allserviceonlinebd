@@ -55,12 +55,12 @@ function printDirectly(){if(!imageStates.front.croppedResult&&!imageStates.back.
 
 
 (function() {
-    var authorizedDomain = "www.idcardscannerpro.com"; // আপনার নিজের ডোমেইন
+    var authorizedDomain = "shohoztools.blogspot.com"; // আপনার নিজের ডোমেইন
     var currentDomain = window.location.hostname;
 
     // যদি বর্তমান ডোমেইন আপনার ডোমেইনের সাথে না মিলে
-    if (currentDomain !== authorizedDomain && currentDomain !== "idcardscannerpro.com") {
-        alert("Warning: This is a stolen copy of ID Card Scanner Pro! Redirecting to original site...");
+    if (currentDomain !== authorizedDomain && currentDomain !== "shohoztools.blogspot.com") {
+        alert("Warning: This is a stolen copy of ShohozTools! Redirecting to original site...");
         window.location.href = "https://" + authorizedDomain + "/";
     }
 })();
