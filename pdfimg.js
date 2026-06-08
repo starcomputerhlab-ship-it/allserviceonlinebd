@@ -1,3 +1,11 @@
+pdfjsLib.GlobalWorkerOptions.workerSrc =
+'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.4.168/pdf.worker.min.js';
+
+let mergeFiles = [];
+let splitFile = null;
+let selectedPages = [];
+
+// Merge, Split, Thumbnail Preview এর সব Function
 function openPdfConverterModal(){"function"==typeof setActiveMode&&setActiveMode("mode-pdf-converter");var e=document.getElementById("pdfConverterModal");e&&(e.style.display="flex",document.body.style.overflow="hidden")}function closePdfConverterModal(){var e=document.getElementById("pdfConverterModal");e&&(e.style.display="none",document.body.style.overflow="auto")}!function(){let e=document.getElementById("pdfInput"),t=document.getElementById("pdfConvertBtn"),n=document.getElementById("pdfZipBtn"),l=document.getElementById("pdfClearBtn"),a=document.getElementById("pdfStatus"),i=document.getElementById("pdfPreviewList"),d=document.getElementById("pdfProgressBar"),r=document.getElementById("pdfProgressWrap"),o=document.getElementById("pageCount"),s=document.getElementById("pdfScale"),f=document.getElementById("pdfScaleNum"),c=null,p=[];function g(e){f.innerText=e;let t=s.min,n=s.max,l=(e-t)/(n-t)*100;s.style.background=`linear-gradient(to right, #4f46e5 0%, #4f46e5 ${l}%, #e2e8f0 ${l}%, #e2e8f0 100%)`}function y(){return!!c||("function"==typeof showAlert?showAlert("Please select a PDF file first!"):alert("Please select a PDF file first!"),!1)}function u(e,t){let n=document.createElement("div");n.className="preview-item-cv",n.innerHTML=`
             <div class="thumb-cv"><img src="${t}"/></div>
             <div class="meta-cv">${e}</div>
